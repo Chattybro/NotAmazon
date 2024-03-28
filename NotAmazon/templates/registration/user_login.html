@@ -1,7 +1,11 @@
-<!-- this should load our templates-->
+{%include "base.html"%}
+<form method="POST" action="{% url "user_login"%}">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"> Login </button>
+</form>
 
-
-<body>
+{% comment %} <body>
     <div id="content", name="content">
         {%block content%}
         <form>
@@ -22,4 +26,4 @@
           </form>
         {%endblock%}
     </div>
-</body>
+</body> {% endcomment %}

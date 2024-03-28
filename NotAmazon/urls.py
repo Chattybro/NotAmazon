@@ -4,10 +4,10 @@ from . import views
 
 # directory list
 urlpatterns = [
-    path("home", views.index, name="index"),
+    path("home", views.index, name="home"),
     path("products", views.products, name="products"),
     path("shop", views.shop, name="shop" ),
-    path("login", views.login, name="login" ),
-    path("signup", views.signup, name="signup" ),
-]
+    path("user_login", views.user_login, name="user_login"),
+    path("user_register", views.user_register, name="user_register" ),
+ ]
 

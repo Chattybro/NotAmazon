@@ -1,0 +1,6 @@
+{%include "base.html"%}
+<form method="POST" action="{% url "user_register"%}"">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"> Login </button>
+</form>
